@@ -8,5 +8,18 @@
     tools:context="com.xing.ando.androido.font.DownLoadFontActivity">
 
 
+    <TextView
+        android:id="@+id/tx_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abeezee"
+        android:text="TextView"
+        android:textStyle="bold|italic"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/abel"
+        app:layout_constraintTop_toBottomOf="@id/tx_one"/>
 </android.support.constraint.ConstraintLayout>
