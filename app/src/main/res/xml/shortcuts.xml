@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<shortcut-->
+        <!--android:shortcutId="compose"-->
+        <!--android:enabled="true"-->
+        <!--android:icon="@drawable/tool"-->
+        <!--android:shortcutShortLabel="@string/short_msg"-->
+        <!--android:shortcutLongLabel="@string/long_msg"-->
+        <!--android:shortcutDisabledMessage="@string/disable_msg"-->
+        <!--&gt;-->
+        <!--<intent-->
+            <!--android:action="android.intent.action.VIEW"-->
+            <!--android:targetPackge="com.xing.ando.androido"-->
+            <!--android:targetClass="com.xing.ando.androido.font.DownLoadFontActivity"-->
+            <!--/>-->
+        <!--<categories android:name="android.shortcut.conversation" />-->
+
+
+    <!--</shortcut>-->
+</shortcuts>

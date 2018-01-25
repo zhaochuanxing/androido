@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/my_preload"/>
+
         <activity android:name=".MainActivity">
         </activity>
         <activity android:name=".MasterActivity">
@@ -19,18 +26,21 @@
             android:permission="android.permission.BIND_JOB_SERVICE"/>
 
         <activity android:name=".font.FontActivity">
+        </activity>
+        <activity android:name=".font.DownLoadFontActivity">
+        </activity>
+        <activity android:name=".fullscreen.FullScreenActivity">
+
+        </activity>
+        <activity android:name=".shortcut.ShortCutActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+            <meta-data android:name="android.app.shortcuts"
+               />
         </activity>
-        <activity android:name=".font.DownLoadFontActivity">
-        </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts"/>
     </application>
 
 </manifest>

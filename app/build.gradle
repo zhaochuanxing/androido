@@ -8,7 +8,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.xing.ando.androido"
-        minSdkVersion 19
+        minSdkVersion 25
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"

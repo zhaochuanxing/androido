@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.xing.ando.androido.font.DownLoadFontActivity">
 
 
@@ -13,13 +14,41 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/abeezee"
-        android:text="TextView"
-        android:textStyle="bold|italic"/>
+        android:text="ABeeZee"
+        android:textStyle="normal"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/abel"
+        android:text="TextView"
         app:layout_constraintTop_toBottomOf="@id/tx_one"/>
-</android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="normal"
+        android:text="ABeeZee"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/actor"
+        android:text="Actor"/>
+
+    <TextView
+        android:id="@+id/tx_program"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tx_program"
+        android:layout_marginTop="30dp"/>
+    <Button
+        android:id="@+id/btn_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="load"/>
+
+</LinearLayout>
