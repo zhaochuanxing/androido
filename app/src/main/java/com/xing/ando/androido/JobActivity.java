@@ -12,12 +12,16 @@ import android.widget.Button;
 
 import com.xing.ando.androido.services.JobScheduleService;
 
-public class MasterActivity extends AppCompatActivity {
+/**
+ * https://code.tutsplus.com/tutorials/using-the-jobscheduler-api-on-android-lollipop--cms-23562
+ * http://blog.csdn.net/bboyfeiyu/article/details/44809395
+ */
+public class JobActivity extends AppCompatActivity {
 
     private Button mStartJobBtn;
     private JobScheduler mJobScheduler;
     private Button mStopJobBtn;
-    public static final String TAG =MasterActivity.class.getSimpleName() ;
+    public static final String TAG =JobActivity.class.getSimpleName() ;
 
 
     @Override
@@ -49,9 +53,5 @@ public class MasterActivity extends AppCompatActivity {
                 mJobScheduler.cancelAll();
             }
         });
-    }
-
-    private void initJob(){
-
     }
 }

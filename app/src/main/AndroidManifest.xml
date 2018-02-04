@@ -18,7 +18,12 @@
 
         <activity android:name=".MainActivity">
         </activity>
-        <activity android:name=".MasterActivity">
+        <activity android:name=".JobActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
 
         <service
@@ -33,13 +38,11 @@
 
         </activity>
         <activity android:name=".shortcut.ShortCutActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-            <meta-data android:name="android.app.shortcuts"
-               />
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts"
+                />
         </activity>
     </application>
 
